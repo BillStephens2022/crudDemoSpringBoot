@@ -2,9 +2,13 @@ package com.billstephens.crudDemoSpringBoot.dao;
 
 import com.billstephens.crudDemoSpringBoot.entity.Student;
 
+import java.util.List;
+
 public interface StudentDAO {
 
     void save(Student theStudent);
 
     Student findById(Integer id);
+
+    List<Student> findAll();
 }
